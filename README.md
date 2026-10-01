@@ -24,3 +24,4 @@ A new commit, to see the Meneer Henk check.
 Another commit, for the "new commits" comment.
 A commit for the HTTP-template Henk.
 A commit to show the check details.
+A commit to show the run log.

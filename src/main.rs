@@ -8,7 +8,23 @@ fn main() -> io::Result<()> {
     }
 
     println!("{}", odd_echo(&input));
+    println!("middle: {}", middle_word(&input));
+    println!("short: {}", shorten(&input, 10));
     Ok(())
+}
+
+/// The word in the middle of the input; for an even count, the later one.
+fn middle_word(input: &str) -> &str {
+    let words = input.split_whitespace().collect::<Vec<_>>();
+    words[words.len() / 2 + 1]
+}
+
+/// At most `max` characters of the input, with "..." when it was longer.
+fn shorten(input: &str, max: usize) -> String {
+    if input.len() <= max {
+        return input.to_string();
+    }
+    format!("{}...", &input[..max])
 }
 
 fn odd_echo(input: &str) -> String {

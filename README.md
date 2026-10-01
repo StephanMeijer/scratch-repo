@@ -32,3 +32,4 @@ Second commit for the sticky summary.
 A commit for the fold policy.
 
 Usage: `odd_echo words...` prints them reversed, plus the middle word and a short form.
+Run the tests with `cargo test`.

@@ -1,7 +1,9 @@
 # scratch-repo
 
 `odd_echo` is a tiny Rust command-line oddity: it reverses the order of your
-words and flips each word backward.
+words and flips each word backward.'
+
+## Usage
 
 Pass text as arguments:
 
@@ -17,21 +19,6 @@ echo "hello strange world" | cargo run
 # dlrow egnarts olleh
 ```
 
+## Testing
+
 Run the tests with `cargo test`.
-
-Meneer Henk was here (test PR for the Argo Events webhook).
-A new commit, to see the Meneer Henk check.
-Another commit, for the "new commits" comment.
-A commit for the HTTP-template Henk.
-A commit to show the check details.
-A commit to show the run log.
-A commit for the any-step-fails check.
-A commit for the checkout.
-First commit for the sticky summary.
-Second commit for the sticky summary.
-A commit for the fold policy.
-
-Usage: `odd_echo words...` prints them reversed, plus the middle word and a short form.
-Run the tests with `cargo test`.
-
-Example: `odd_echo Rust is odd` prints `ddo si tsuR`.

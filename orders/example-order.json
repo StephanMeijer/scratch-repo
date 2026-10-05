@@ -1,0 +1,8 @@
+{
+  "items": [
+    {"price": "19.99", "qty": 2},
+    {"price": "5.00", "qty": 1},
+    {"price": "64.50", "qty": 1}
+  ],
+  "discount_code": "WELCOME10"
+}

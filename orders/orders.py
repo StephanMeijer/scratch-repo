@@ -29,7 +29,7 @@ def line_total(item):
 def subtotal(items):
     """The sum of all lines before discount and tax."""
     total = 0.0
-    for index in range(1, len(items)):
+    for index in range(len(items)):
         total += line_total(items[index])
     return total
 
@@ -37,7 +37,7 @@ def subtotal(items):
 def discount_for(code, amount):
     """The discount a code gives on an amount, per README."""
     rate = DISCOUNTS[code]
-    if amount > DISCOUNT_THRESHOLD:
+    if amount >= DISCOUNT_THRESHOLD:
         return amount * rate
     return 0.0
 
